@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" sizes="256x256" href="media/journal.png">
+        <title>CSE 110 Journal Entries</title>
+    </head>
+    <body>
+        <header>
+            <h1>My Journal</h1>
+            <h2><span>Hi everyone, I will be discussing my last 3 days in this journal!</span></h2>
+            <img class="old-journal" width=300 src="media/old_journal.png" alt="Picture of an old journal for aesthetics">
+            <details>
+                <summary><b>Navigation</b></summary>
+                <nav class="menu">
+                    <ul>
+                      <li><a href="#Thursday"><h3>Thursday - April 8th, 2021</h3></a></li>
+                      <li><a href="#Friday"><h3>Friday - April 9th, 2021</h3></a></li>
+                      <li><a href="#Saturday"><h3>Saturday - April 10th, 2021</h3></a></li>
+                    </ul>
+                </nav>
+            </details>
+        </header>
+        <main> 
+            <hr>
+            <section>
+                <h2 id="Thursday">Thursday - April 8th, 2021</h2>
+                <h3>Tasks for the Day</h3>
+                <ol>
+                    <li>CSE 101 Lecture</li>
+                    <li>CSE 110 Lecture</li>
+                    <li>Go watch the sunset</li>
+                </ol>
+                <p>
+                    Today was a very busy day for me. I had my 2 <strong>important</strong> lectures and then I was mostly done for the day. <br>
+                    After some menial tasks, I went to the beach to watch the sunset with a friend. Overall, it was a <em>great</em> day.
+                </p>
+                <details>
+                    <summary>Media</summary>
+                    <h3>Great picture of the sunset</h3>
+                    <img class="sunset" src="media/sunset.png" width=300 alt="Picture of the sunset">
+                    <div></div>
+                    <h3>The absolute best song</h3>
+                    <audio controls>
+                        <source src="media/best_song.mp3" type="audio/mpeg">
+                        Your browser does not support the <code>audio</code> element.
+                    </audio>
+                    <div></div>
+                    <h3>Wonderful video</h3>
+                    <video controls width="250">
+                        <source src="media/banana.mp4" type="video/mp4">
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                </details>
+            </section>
+            <hr>
+            <section>
+                <h2 id="Friday">Friday - April 9th, 2021</h2>
+                <h3>Tasks for the Day</h3>
+                <ol>
+                    <li>CSE 101 Discussion</li>
+                    <li>Finish some assignments</li>
+                    <li>Get tacos and see some McLarens with friends</li>
+                </ol>
+                <p>
+                    Finally it is <b>Friday</b>! I started off the day going to a discussion and then I finished some assignments. <br>
+                    After all my work was finished, my friends and I went to grab some tacos and see some <i>luxury cars</i>, like my favorite: McLarens!
+                </p>
+                <details>
+                    <summary>Media</summary>
+                    <h3>My favorite luxury cars</h3>
+                    <img class="mclaren" src="media/mclaren.png" width=300 alt="Picture of a few nice cars">
+                    <div></div>
+                    <h3>The absolute best song</h3>
+                    <audio controls>
+                        <source src="media/best_song.mp3" type="audio/mpeg">
+                        Your browser does not support the <code>audio</code> element.
+                    </audio>
+                    <div></div>
+                    <h3>Wonderful video</h3>
+                    <video controls width="250">
+                        <source src="media/banana.mp4" type="video/mp4">
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                </details>
+            </section>
+            <hr>
+            <section>
+                <h2 id="Saturday">Saturday - April 10th, 2021</h2>
+                <h3>Tasks for the Day</h3>
+                <ol>
+                    <li>Some fun coding</li>
+                    <li>Play some games with friends</li>
+                    <li>Grab some food at a restaurant</li>
+                </ol>
+                <p>
+                    Nothing like the weekends! My saturday started off with a few hours of <em>coding</em>, before I started to play some online games with a few friends. <br>
+                    We also went to grab some food indoors, which I had not done for a while because of the pandemic. Very <strong>enjoyable</strong> day!
+                </p>
+                <details>
+                    <summary>Media</summary> 
+                    <h3>The restaurant where I got food</h3>
+                    <img class="food" src="media/food.png" width=300 alt="Picture of the restaurant">
+                    <div></div>
+                    <h3>The absolute best song</h3>
+                    <audio controls>
+                        <source src="media/best_song.mp3" type="audio/mpeg">
+                        Your browser does not support the <code>audio</code> element.
+                    </audio>
+                    <div></div>
+                    <h3>Wonderful video</h3>
+                    <video controls width="250">
+                        <source src="media/banana.mp4" type="video/mp4">
+                        Sorry, your browser doesn't support embedded videos.
+                    </video>
+                </details>
+            </section>
+            <hr>
+        </main>
+        <footer> 
+            <form class="form-journal">
+                <fieldset>
+                    <legend><b>Add a new entry to the journal</b></legend>
+                    <div class="form-name">
+                        <label>Please enter your name here: </label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="form-date">
+                        <label>Enter the date of your entry: </label>
+                        <input type="date" name="date" id="date" required>
+                    </div>
+                    <div>
+                        <label>Enter the weekday for today:</label>
+                        <input list="form-weekday" name="weekday" id="weekday" required>
+                        <datalist id="form-weekday">
+                            <option value="Monday">
+                            <option value="Tuesday">
+                            <option value="wednesday">
+                            <option value="Thursday">
+                            <option value="Friday">
+                            <option value="Saturday">
+                            <option value="Sunday">    
+                        </datalist>
+                    </div>
+                    <div>
+                        <label>Please rate how your day went:</label>
+                        <select name="pets" id="pet-select">
+                            <option value="">--Please choose an option--</option>
+                            <option value="fantastic">Fantastic!</option>
+                            <option value="great">Great</option>
+                            <option value="good">Good</option>
+                            <option value="meh">Meh</option>
+                            <option value="bad">Bad</option>
+                            <option value="awful">Awful</option>
+                        </select>
+                    </div>
+                    <div class="form-entry">
+                      <label>Write your entry in the box: </label>
+                      <textarea name="entry" cols="35" rows="10"></textarea>
+                    </div>
+                    <span>Pick your favorite number:</span>
+                    <div class="form-fav-number">
+                        <input type="radio" name="number1" id="number1r" required>
+                        <label>1</label>
+                        <input type="radio" name="number2" id="number2r" required>
+                        <label>2</label>
+                        <input type="radio" name="number3" id="number3r" required>
+                        <label>3</label>
+                        <input type="radio" name="number4" id="number4r" required>
+                        <label>4</label>
+                        <input type="radio" name="number5" id="number5r" required>
+                        <label>5</label>
+                    </div>
+                    <span>Now, pick your top 3 favorite numbers:</span>
+                    <div class="form-numbers">
+                        <input type="checkbox" name="number1" id="number1c" required>
+                        <label>1</label>
+                        <input type="checkbox" name="number2" id="number2c" required>
+                        <label>2</label>
+                        <input type="checkbox" name="number3" id="number3c" required>
+                        <label>3</label>
+                        <input type="checkbox" name="number4" id="number4c" required>
+                        <label>4</label>
+                        <input type="checkbox" name="number5" id="number5c" required>
+                        <label>5</label>
+                    </div>
+                    <div class="form-submit">
+                      <button name="submit">Submit Journal Entry!</button>
+                    </div>
+                </fieldset>
+            </form>
+            <p>
+                Created only with HTML for CSE 110 at UCSD <br>
+                Artyom Muradyan 2021
+            </p>
+        </footer>       
+    </body>
+</html>
