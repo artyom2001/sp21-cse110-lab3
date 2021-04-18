@@ -1,10 +1,10 @@
 ---
 name: Design Report
-about: Review any CSS errors or issues
+about: Review any CSS issues
 title: ''
 labels: design
 assignees: artyom2001
 
 ---
 
-Fix any possible issues in this branch
+Fix any possible design issues in this branch
