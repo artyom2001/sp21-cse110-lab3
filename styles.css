@@ -1,0 +1,160 @@
+/* This is where all my CSS styling goes*/
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media (min-width: 50em) {
+    html {
+        font-size: 15px;
+    }
+    body {
+        background-color: rgb(211, 230, 255);
+    }
+}
+
+a[href] {
+    color: darkcyan;
+}
+
+nav {
+    display: block;
+    background-color: aquamarine;
+    border: cadetblue solid 5px;
+    border-radius: 10px;
+    width: 50em;
+    margin: auto;
+}
+
+details > summary {
+    display: block;
+    margin: auto;
+    width: 100px;
+    background-color: aquamarine;
+    border: cadetblue solid 5px;
+    border-radius: 10px;
+}
+
+ol + p {
+    position: relative;
+    left: 5em;
+    border:rgb(0, 41, 94);
+}
+
+section {
+    display: block;
+    margin: auto;
+}
+
+section > details {
+    position: relative;
+    left: 8em;
+}
+
+.day {
+    border: rgb(0, 63, 108) 5px solid;
+    border-radius: 10px;
+    background-color: rgba(167, 167, 255, 0.415);
+    width: 80em;
+    display: grid;
+    align-items: start;
+    justify-items: start;
+    align-content: left;
+    justify-content: left;
+}
+
+summary ~ h3 {
+    text-align: center;
+}
+
+h1 {
+    color: rgb(219, 50, 50);
+    text-decoration: underline;
+    text-align: center; 
+    font-family: 'RocknRoll One', serif;
+    font-size: 50px;
+}
+
+#intro {
+    text-align: center;
+    color: hsla(33, 97%, 56%, 1);
+}
+
+img, audio, video {
+    position: static;
+    display: block;
+    margin: auto auto auto auto;
+    border:3px rgb(0, 41, 94) dashed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+} 
+
+img.old-journal {
+    display: block;
+    padding: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    height: 300px;
+    width: 300px;
+    min-width: auto;
+    max-width: fit-content;
+    border-style: solid;
+    border-color: blue;
+    border-width: 5px;
+    border-radius: 5px;
+}
+
+ol.tasks li {
+    position: relative;
+    left: 30px;
+    color: #00a84c;
+    font-size: 1.2rem;
+}
+
+.form-journal {
+    background-color:rgba(116, 94, 255, 0.253);
+    margin: auto auto 50px auto;
+    padding: 1.25em 1.25em 1.25em 1.25em;
+    color:rgb(0, 41, 94);
+    width: 600px;
+    border: 5px rgba(116, 94, 255) solid;
+    border-radius: 10px;
+}
+
+#journal-flex {
+    display: inline flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: baseline;
+}
+
+.flex-item {
+    display: block;
+    margin: auto;
+}
+
+button {
+    background-color: rgb(172, 159, 255);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background-color:rgb(141, 124, 250);
+}
+
+button:active {
+    background-color: rgba(68, 35, 255, 0.726);
+}
+
+p.end {
+    text-align: center;
+}
+
+
+
