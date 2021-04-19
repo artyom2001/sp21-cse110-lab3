@@ -4,13 +4,15 @@
         <meta charset="utf-8">
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
         <link rel="icon" sizes="256x256" href="media/journal.png">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=RocknRoll+One">
         <title>CSE 110 Journal Entries</title>
     </head>
     <body>
         <header>
             <h1>My Journal</h1>
-            <h2><span>Hi everyone, I will be discussing my last 3 days in this journal!</span></h2>
-            <img class="old-journal" width=300 src="media/old_journal.png" alt="Picture of an old journal for aesthetics">
+            <h2 id="intro">Hi everyone, I will be discussing my last 3 days in this journal!</h2>
+            <img class="old-journal" src="media/old_journal.png" alt="Picture of an old journal for aesthetics">
             <details>
                 <summary><b>Navigation</b></summary>
                 <nav class="menu">
@@ -24,10 +26,10 @@
         </header>
         <main> 
             <hr>
-            <section>
+            <section class="day">
                 <h2 id="Thursday">Thursday - April 8th, 2021</h2>
                 <h3>Tasks for the Day</h3>
-                <ol>
+                <ol class="tasks">
                     <li>CSE 101 Lecture</li>
                     <li>CSE 110 Lecture</li>
                     <li>Go watch the sunset</li>
@@ -55,10 +57,10 @@
                 </details>
             </section>
             <hr>
-            <section>
+            <section class="day">
                 <h2 id="Friday">Friday - April 9th, 2021</h2>
                 <h3>Tasks for the Day</h3>
-                <ol>
+                <ol class="tasks">
                     <li>CSE 101 Discussion</li>
                     <li>Finish some assignments</li>
                     <li>Get tacos and see some McLarens with friends</li>
@@ -86,10 +88,10 @@
                 </details>
             </section>
             <hr>
-            <section>
+            <section class="day">
                 <h2 id="Saturday">Saturday - April 10th, 2021</h2>
                 <h3>Tasks for the Day</h3>
-                <ol>
+                <ol class="tasks">
                     <li>Some fun coding</li>
                     <li>Play some games with friends</li>
                     <li>Grab some food at a restaurant</li>
@@ -120,17 +122,17 @@
         </main>
         <footer> 
             <form class="form-journal">
-                <fieldset>
+                <fieldset id="journal-flex">
                     <legend><b>Add a new entry to the journal</b></legend>
-                    <div class="form-name">
+                    <div class="flex-item">
                         <label>Please enter your name here: </label>
                         <input type="text" name="name" id="name" required>
                     </div>
-                    <div class="form-date">
+                    <div class="flex-item">
                         <label>Enter the date of your entry: </label>
                         <input type="date" name="date" id="date" required>
                     </div>
-                    <div>
+                    <div class="flex-item">
                         <label>Enter the weekday for today:</label>
                         <input list="form-weekday" name="weekday" id="weekday" required>
                         <datalist id="form-weekday">
@@ -143,7 +145,7 @@
                             <option value="Sunday">    
                         </datalist>
                     </div>
-                    <div>
+                    <div class="flex-item">
                         <label>Please rate how your day went:</label>
                         <select name="pets" id="pet-select">
                             <option value="">--Please choose an option--</option>
@@ -155,12 +157,12 @@
                             <option value="awful">Awful</option>
                         </select>
                     </div>
-                    <div class="form-entry">
+                    <div class="flex-item">
                       <label>Write your entry in the box: </label>
-                      <textarea name="entry" cols="35" rows="10"></textarea>
+                      <textarea name="entry" cols="50" rows="10"></textarea>
                     </div>
                     <span>Pick your favorite number:</span>
-                    <div class="form-fav-number">
+                    <div class="flex-item">
                         <input type="radio" name="number1" id="number1r">
                         <label>1</label>
                         <input type="radio" name="number2" id="number2r">
@@ -173,7 +175,7 @@
                         <label>5</label>
                     </div>
                     <span>Now, pick your top 3 favorite numbers:</span>
-                    <div class="form-numbers">
+                    <div class="flex-item">
                         <input type="checkbox" name="number1" id="number1c">
                         <label>1</label>
                         <input type="checkbox" name="number2" id="number2c">
@@ -185,13 +187,13 @@
                         <input type="checkbox" name="number5" id="number5c">
                         <label>5</label>
                     </div>
-                    <div class="form-submit">
+                    <div class="flex-item">
                       <button name="submit">Submit Journal Entry!</button>
                     </div>
                 </fieldset>
             </form>
-            <p>
-                Created only with HTML for CSE 110 at UCSD <br>
+            <p class="end">
+                Created using HTML and CSS for CSE 110 at UCSD <br>
                 Artyom Muradyan 2021
             </p>
         </footer>       
